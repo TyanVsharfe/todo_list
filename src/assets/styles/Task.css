@@ -1,0 +1,97 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+}
+.task_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task_list  li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: baseline;
+    background-color: #f1f1f1;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.task_list li:hover {
+    filter: brightness(75%);
+}
+
+.task_list li {
+    margin-bottom: 20px;
+}
+
+
+input[type='checkbox']:checked {
+content: url("../icons/done.svg");
+color:white;
+}
+
+input[type='checkbox'] {
+text-align: center;
+display: table-cell;
+vertical-align: middle;
+width: 25px;
+height: 25px;
+appearance:none;
+border-radius:10%;
+border: 1px solid black;
+box-shadow: none;
+font-size: 1em;
+}
+
+.del-edit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul.task_list button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+}
+
+input[type=search] {
+    width: 300px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 8px 20px;
+}
+
+input[type=search]:focus, input[type=search]:hover {
+    outline: 2px solid;
+    border-radius: 10px;
+    padding: 8px 20px;
+}
+
+.del-edit {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.task_title {
+    width: 450px;
+    text-align: center;
+}
